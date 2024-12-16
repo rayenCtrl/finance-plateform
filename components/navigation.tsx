@@ -4,6 +4,8 @@ import { useMedia } from "react-use";
 import { NavButton } from "./nav-button";
 import {
     Sheet,
+    SheetHeader,
+    SheetTitle,
     SheetContent,
     SheetTrigger,
 } from "./ui/sheet"
@@ -55,6 +57,9 @@ export const Navigation = () => {
                     </Button>
                 </SheetTrigger>
                 <SheetContent>
+                    <SheetHeader>
+                        <SheetTitle>Navigation Menu</SheetTitle>
+                    </SheetHeader>
                     <nav className="flex flex-col gap-y-2 pt-6">
                         {routes.map((route) => (
                             <Button 
