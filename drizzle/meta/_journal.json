@@ -15,6 +15,13 @@
       "when": 1734782294104,
       "tag": "0001_brief_vulcan",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1734791963368,
+      "tag": "0002_square_sharon_carter",
+      "breakpoints": true
     }
   ]
 }
