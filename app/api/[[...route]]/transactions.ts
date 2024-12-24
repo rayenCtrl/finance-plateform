@@ -119,8 +119,8 @@ const app = new Hono()
     }
 
     const [data] = await db.insert(transactions).values({
-      ...values,
       id: createId(),
+      ...values,
     }).returning();
 
     return c.json({data})
@@ -147,8 +147,8 @@ const app = new Hono()
       const data = await db
         .insert(transactions)
         .values(values.map((v) => ({
-          ...v,
           id: createId(),
+          ...v,
         }))
         )
         .returning();
