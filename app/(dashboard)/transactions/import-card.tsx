@@ -38,6 +38,7 @@ export const ImportCard = ({data, onCancel, onSubmit}: Props) => {
 
     const headers = data[0];
     const body = data.slice(1);
+    
     const onTableHeadSelectChange = (
         columnIndex: number,
         value: string | null
@@ -130,7 +131,7 @@ export const ImportCard = ({data, onCancel, onSubmit}: Props) => {
                     headers={headers}
                     body={body}
                     selectedColumns={selectedColumns}
-                    onTableHeadSelectChange={()=>{}} 
+                    onTableHeadSelectChange={onTableHeadSelectChange} 
                     />
                 </CardContent>
             </Card>

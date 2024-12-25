@@ -15,6 +15,8 @@ type Props = {
     onTableHeadSelectChange: (columnIndex: number, value: string | null) => void;
 }
 
+
+
 export const ImportTable = ({
     headers,
     body,
@@ -22,8 +24,9 @@ export const ImportTable = ({
     onTableHeadSelectChange,
 }:Props)=>{
     return(
+        
         <div className="rounded-md border overflow-hidden">
-            <TableHeader>
+            <TableHeader className='bg-muted'>
                 <TableRow>
                     {headers.map((_item,index)=>(
                         <TableHead key={index}>
