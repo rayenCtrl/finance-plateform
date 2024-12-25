@@ -13,7 +13,7 @@ export const useDeleteTransaction = (id?:string) => {
         ResponseType,
         Error
         >({
-            mutationFn: async (json) => {
+            mutationFn: async () => {
                 const response = await client.api.transactions[":id"]["$delete"]({
                     param: {id}
                 });

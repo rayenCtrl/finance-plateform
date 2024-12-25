@@ -56,9 +56,9 @@ export const transactionsRelations = relations(transactions, ({one}) => ({
 
 export const insertTransactionSchema = createInsertSchema(transactions, {
     date: z.coerce.date(), // Ensure the date is coerced
-    amount: z.number(),    // Ensure amount is a number
-    payee: z.string(),     // Ensure payee is a string
-    notes: z.string().optional(), // Allow notes to be optional
-    accountId: z.string(), // Ensure accountId is a string
-    categoryId: z.string().nullable().optional(), // Allow nullable for optional fields
+    amount: z.number(),    
+    payee: z.string(),     
+    notes: z.string().nullable().optional(), 
+    accountId: z.string(), 
+    categoryId: z.string().nullable().optional(), 
 });

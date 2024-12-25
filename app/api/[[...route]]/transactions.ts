@@ -173,7 +173,7 @@ const app = new Hono()
         return c.json({ error: "Unauthorized" }, 401);
       }
 
-      const transactionsToDelete = db.$with("transactios_to_delete").as(
+      const transactionsToDelete = db.$with("transactions_to_delete").as(
         db.select({ id:transactions.id }).from(transactions)
         .innerJoin(accounts, eq(transactions.accountId, accounts.id))
         .where(
@@ -222,7 +222,7 @@ const app = new Hono()
         return c.json({ error: "Unauthorized" }, 401);
       }
 
-      const transactionsToUpdate = db.$with("transactios_to_update").as(
+      const transactionsToUpdate = db.$with("transactions_to_update").as(
         db.select({ id:transactions.id }).from(transactions)
         .innerJoin(accounts, eq(transactions.accountId, accounts.id))
         .where(

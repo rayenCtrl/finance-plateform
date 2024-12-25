@@ -13,7 +13,6 @@ import {
     FormLabel,
     FormField,
     FormItem,
-    FormMessage,
 } from "@/components/ui/form"
 import { Select } from '@/components/select'
 import { Textarea } from '@/components/ui/textarea'
@@ -26,7 +25,7 @@ const formSchema = z.object({
     categoryId: z.string().nullable().optional(),
     payee: z.string(),
     amount: z.string(), // amount is a string?
-    notes: z.string().optional(),
+    notes: z.string().nullable().optional(), // added 25/12
 
 })
 
