@@ -10,9 +10,8 @@ import {
     useSearchParams,
 } from "next/navigation";
 
-import { useGetSummary } from "@/features/summary/api/use-get-summary";
 import { Button } from "@/components/ui/button";
-import { cn, formatDateRange } from "@/lib/utils";
+import { formatDateRange } from "@/lib/utils";
 import { Calendar } from "./ui/calendar";
 import {
     Popover,
@@ -20,7 +19,7 @@ import {
     PopoverTrigger,
     PopoverClose,
 } from "@/components/ui/popover";
-import { DateRange, isDateRange } from "react-day-picker";
+import { DateRange } from "react-day-picker";
 
 
 export const DateFilter = () => { 

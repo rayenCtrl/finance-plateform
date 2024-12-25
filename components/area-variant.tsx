@@ -3,10 +3,8 @@ import {
     AreaChart,
     Area,
     XAxis,
-    YAxis,
     CartesianGrid,
     Tooltip,
-    Legend,
     ResponsiveContainer,
 } from "recharts";
 import { CustomTooltip } from "./custom-tooltip";
