@@ -29,8 +29,7 @@ export const useGetTransactions = () => {
             return data.map((transaction) => ({
                 ...transaction,
                 amount: convertAmountFromMiliunits(transaction.amount),
-            })
-            );
+            }));
         },
     });
     return query;

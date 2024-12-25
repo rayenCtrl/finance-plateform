@@ -31,7 +31,7 @@ const routes =[
         label: 'Categories',
     },
     {
-        href: '/settings',
+        href: '',
         label: 'Settings',
     },
 ]
