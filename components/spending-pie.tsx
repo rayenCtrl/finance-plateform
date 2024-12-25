@@ -22,11 +22,7 @@ import {
     CardTitle,
 } from "./ui/card"
 
-import { AreaVariant } from "./area-variant";
-import { BarVariant } from "./bar-variant";
-import { LineVariant } from "./line-variant";
 import { PieVariant } from "./pie-variant";
-import { RadarChart } from "recharts";
 import { RadarVariant } from "./radar-variant";
 import { RadialVariant } from "./radial-variant";
 import { Skeleton } from "./ui/skeleton";

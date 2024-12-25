@@ -46,7 +46,7 @@ const SHORT_NOTES = [
 ];
 const SEED_TRANSACTIONS: (typeof transactions.$inferSelect)[] = [];
 const defaultTo = new Date();
-const defaultFrom = subDays(defaultTo, 30);
+const defaultFrom = subDays(defaultTo, 180);
 
 const generateRandomAmount = (category: typeof categories.$inferSelect) => {
   switch (category.name) {
