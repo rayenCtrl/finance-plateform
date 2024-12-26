@@ -1,11 +1,11 @@
  ### Finance SaaS Platform designed to help users manage their financial data effectively.
 
 ##### Technologies Used
-**Frontend Framework:** Built with Next.js 14, providing server-side rendering and static site generation capabilities.
-**Styling:** Utilizes TailwindCSS and Shadcn UI for responsive design.
-**Database Management:** Employs PostgreSQL with Drizzle ORM for efficient data handling.
-**API Development:** Uses Hono.js for creating robust APIs.
-**Authentication:** Implemented via Clerk, ensuring secure user logins.
+- **Frontend Framework:** Built with Next.js 14, providing server-side rendering and static site generation capabilities.
+- **Styling:** Utilizes TailwindCSS and Shadcn UI for responsive design.
+- **Database Management:** Employs PostgreSQL with Drizzle ORM for efficient data handling.
+- **API Development:** Uses Hono.js for creating robust APIs.
+- **Authentication:** Implemented via Clerk, ensuring secure user logins.
 
 ##### Project Structure
 This project not only serves as a practical guide for aspiring developers but also provides insights into building a scalable application that can be monetized through services like Lemon Squeezy.
